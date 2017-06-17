@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: font_family_01;       /*这里是说明调用来的字体名字*/
+    src: url('../font/logo-font/akaDora.ttf');   /*这里是字体文件路径*/
+    src: local('font_family_01 Regular'),
+    local('font_family_01'),
+    url('../font/logo-font/akaDora.ttf') format('woff'),
+    url('../font/logo-font/akaDora.ttf') format('truetype'),
+    url('../font/logo-font/akaDora.ttf') format('svg');
+}
+@font-face {
+    font-family: font_family_02;       /*这里是说明调用来的字体名字*/
+    src: url('../font/logo-font/Fadilla.ttf');   /*这里是字体文件路径*/
+    src: local('font_family_02 Regular'),
+    local('font_family_02'),
+    url('../font/logo-font/Fadilla.ttf') format('woff'),
+    url('../font/logo-font/Fadilla.ttf') format('truetype'),
+    url('../font/logo-font/Fadilla.ttf') format('svg');
+}
+@font-face {
+    font-family: font_family_03;       /*这里是说明调用来的字体名字*/
+    src: url('../font/logo-font/Yellowtail.otf');   /*这里是字体文件路径*/
+    src: local('font_family_03 Regular'),
+    local('font_family_03'),
+    url('../font/logo-font/Yellowtail.otf') format('woff'),
+    url('../font/logo-font/Yellowtail.otf') format('truetype'),
+    url('../font/logo-font/Yellowtail.otf') format('svg');
+}

@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- 引用字体 -->
+    <link href="css/font_style.css" type="text/css" rel="stylesheet">
+    <link href="font/iconfont.css" type="text/css" rel="stylesheet">
+    <!-- 自动筛选 -->
+    <link href="css/shaixuan.normalize.css" type="text/css" rel="stylesheet">
+    <!-- 页面样式 -->
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+
+    <!--<link rel="stylesheet" type="text/css" media="screen and (max-device-width: 769px)" href="css/font_style.css" />-->
+    <!--<link rel="stylesheet" type="text/css" media="screen and (min-width: 600px) and (max-device-width: 980px)" href="css600-980.css" />-->
+    <script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+
+    <!--[if lt IE 9]>
+    　　　　<script src="js/css3-mediaqueries.js" type="text/javascript"></script>
+    <![endif]-->
+    <title>WangMengDong Demo</title>
+</head>
+<body id="index_body">
+<div id="wrap">
+    <div class="header">
+        <a class="header_logo fl" href="index.html">Wmd Designer</a>
+        <ul class="nav_button fr">
+            <li class="admin_img"><a href="#">
+                <div class="img">
+                    <img src="images/admin.jpg">
+                </div>
+            </a></li>
+        </ul>
+        <ul class="header_nav fr">
+            <li class="header_nav_first close_nav">
+                <div class="btn_close_nav"></div>
+                <div class="clear"></div>
+            </li>
+            <li class="header_nav_first"><a class="first_nav" href="index.html">首页</a></li>
+            <li class="header_nav_first">
+                <a class="first_nav" href="#">发现 <i class="iconfont icon-xia"></i></a>
+                <ul class="header_nav_second">
+                    <li><a href="#">图片</a></li>
+                    <li><a href="#">视频</a></li>
+                    <li><a href="#">字体</a></li>
+                </ul>
+            </li>
+            <li class="header_nav_first"><a class="first_nav" href="#">职位</a></li>
+            <li class="header_nav_first"><a class="first_nav" href="#">活动</a></li>
+            <li class="header_nav_first">
+                <a class="first_nav" href="#">素材 <i class="iconfont icon-xia"></i></a>
+                <ul class="header_nav_second">
+                    <li><a href="#">图片</a></li>
+                    <li><a href="#">视频</a></li>
+                    <li><a href="#">字体</a></li>
+                </ul>
+            </li>
+            <li class="header_nav_first"><a class="first_nav" href="#">课程</a></li>
+            <div class="clear"></div>
+        </ul>
+        <div class="header_nav_btn fr">
+            <div class="open">
+                <span class="one"></span>
+                <span class="two"></span>
+                <span class="three"></span>
+            </div>
+        </div>
+        <div id="black_close"></div>
+        <div class="clear"></div>
+    </div>
+
+    <div class="page_container">
+
+        <ul id="filters" class="clearfix">
+            <li><span class="filter active" data-filter="app card icon logo web">All</span></li>
+            <li><span class="filter" data-filter="web">Web</span></li>
+            <li><span class="filter" data-filter="app">App</span></li>
+            <li><span class="filter" data-filter="card">Card</span></li>
+            <li><span class="filter" data-filter="icon">Icon</span></li>
+            <li><span class="filter" data-filter="logo">Logo</span></li>
+        </ul>
+
+        <div id="portfoliolist">
+
+            <div class="portfolio web" data-cat="web">
+                <div class="portfolio-wrapper">
+                    <a href="pages/Web/code/01_yantai_jiaojing_yunpingtai.html" target="_blank">
+                        <img src="images/portfolios/web/1.jpg" alt="" />
+                        <div class="label">
+                            <div class="label-text">
+                                <a href="pages/Web/code/01_yantai_jiaojing_yunpingtai.html"  target="_blank" class="text-title">烟台交警大数据智慧云综合工作平台烟台交警大数据智慧云综合工作平台</a>
+                                <span class="text-category">Web design</span>
+                            </div>
+                            <div class="label-bg"></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="portfolio app" data-cat="app">
+                <div class="portfolio-wrapper">
+                    <img src="images/portfolios/app/1.jpg" alt="" />
+                    <div class="label">
+                        <div class="label-text">
+                            <a class="text-title">Visual Infography</a>
+                            <span class="text-category">APP</span>
+                        </div>
+                        <div class="label-bg"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio web" data-cat="web">
+                <div class="portfolio-wrapper">
+                    <img src="images/portfolios/web/4.jpg" alt="" />
+                    <div class="label">
+                        <div class="label-text">
+                            <a class="text-title">Sonor's Design</a>
+                            <span class="text-category">Web design</span>
+                        </div>
+                        <div class="label-bg"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio card" data-cat="card">
+                <div class="portfolio-wrapper">
+                    <img src="images/portfolios/card/1.jpg" alt="" />
+                    <div class="label">
+                        <div class="label-text">
+                            <a class="text-title">Typography Company</a>
+                            <span class="text-category">Business card</span>
+                        </div>
+                        <div class="label-bg"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio app" data-cat="app">
+                <div class="portfolio-wrapper">
+                    <img src="images/portfolios/app/3.jpg" alt="" />
+                    <div class="label">
+                        <div class="label-text">
+                            <a class="text-title">Weatherette</a>
+                            <span class="text-category">APP</span>
+                        </div>
+                        <div class="label-bg"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio card" data-cat="card">
+                <div class="portfolio-wrapper">
+                    <img src="images/portfolios/card/4.jpg" alt="" />
+                    <div class="label">
+                        <div class="label-text">
+                            <a class="text-title">BMF</a>
+                            <span class="text-category">Business card</span>
+                        </div>
+                        <div class="label-bg"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio card" data-cat="card">
+                <div class="portfolio-wrapper">
+                    <img src="images/portfolios/card/5.jpg" alt="" />
+                    <div class="label">
+                        <div class="label-text">
+                            <a class="text-title">Techlion</a>
+                            <span class="text-category">Business card</span>
+                        </div>
+                        <div class="label-bg"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio logo" data-cat="logo">
+                <div class="portfolio-wrapper">
+                    <img src="images/portfolios/logo/1.jpg" alt="" />
+                    <div class="label">
+                        <div class="label-text">
+                            <a class="text-title">KittyPic</a>
+                            <span class="text-category">Logo</span>
+                        </div>
+                        <div class="label-bg"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio app" data-cat="app">
+                <div class="portfolio-wrapper">
+                    <img src="images/portfolios/app/2.jpg" alt="" />
+                    <div class="label">
+                        <div class="label-text">
+                            <a class="text-title">Graph Plotting</a>
+                            <span class="text-category">APP</span>
+                        </div>
+                        <div class="label-bg"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio card" data-cat="card">
+                <div class="portfolio-wrapper">
+                    <img src="images/portfolios/card/2.jpg" alt="" />
+                    <div class="label">
+                        <div class="label-text">
+                            <a class="text-title">QR Quick Response</a>
+                            <span class="text-category">Business card</span>
+                        </div>
+                        <div class="label-bg"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio logo" data-cat="logo">
+                <div class="portfolio-wrapper">
+                    <img src="images/portfolios/logo/6.jpg" alt="" />
+                    <div class="label">
+                        <div class="label-text">
+                            <a class="text-title">Mobi Sock</a>
+                            <span class="text-category">Logo</span>
+                        </div>
+                        <div class="label-bg"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio logo" data-cat="logo">
+                <div class="portfolio-wrapper">
+                    <img src="images/portfolios/logo/7.jpg" alt="" />
+                    <div class="label">
+                        <div class="label-text">
+                            <a class="text-title">Village Community Church</a>
+                            <span class="text-category">Logo</span>
+                        </div>
+                        <div class="label-bg"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio icon" data-cat="icon">
+                <div class="portfolio-wrapper">
+                    <img src="images/portfolios/icon/4.jpg" alt="" />
+                    <div class="label">
+                        <div class="label-text">
+                            <a class="text-title">Domino's Pizza</a>
+                            <span class="text-category">Icon</span>
+                        </div>
+                        <div class="label-bg"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio web" data-cat="web">
+                <div class="portfolio-wrapper">
+                    <img src="images/portfolios/web/3.jpg" alt="" />
+                    <div class="label">
+                        <div class="label-text">
+                            <a class="text-title">Backend Admin</a>
+                            <span class="text-category">Web design</span>
+                        </div>
+                        <div class="label-bg"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio icon" data-cat="icon">
+                <div class="portfolio-wrapper">
+                    <img src="images/portfolios/icon/1.jpg" alt="" />
+                    <div class="label">
+                        <div class="label-text">
+                            <a class="text-title">Instagram</a>
+                            <span class="text-category">Icon</span>
+                        </div>
+                        <div class="label-bg"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio web" data-cat="web">
+                <div class="portfolio-wrapper">
+                    <img src="images/portfolios/web/2.jpg" alt="" />
+                    <div class="label">
+                        <div class="label-text">
+                            <a class="text-title">Student Guide</a>
+                            <span class="text-category">Web design</span>
+                        </div>
+                        <div class="label-bg"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio icon" data-cat="icon">
+                <div class="portfolio-wrapper">
+                    <img src="images/portfolios/icon/2.jpg" alt="" />
+                    <div class="label">
+                        <div class="label-text">
+                            <a class="text-title">Scoccer</a>
+                            <span class="text-category">Icon</span>
+                        </div>
+                        <div class="label-bg"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio icon" data-cat="icon">
+                <div class="portfolio-wrapper">
+                    <img src="images/portfolios/icon/5.jpg" alt="" />
+                    <div class="label">
+                        <div class="label-text">
+                            <a class="text-title">3D Map</a>
+                            <span class="text-category">Icon</span>
+                        </div>
+                        <div class="label-bg"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio logo" data-cat="logo">
+                <div class="portfolio-wrapper">
+                    <img src="images/portfolios/logo/3.jpg" alt="" />
+                    <div class="label">
+                        <div class="label-text">
+                            <a class="text-title">Native Designers</a>
+                            <span class="text-category">Logo</span>
+                        </div>
+                        <div class="label-bg"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio logo" data-cat="logo">
+                <div class="portfolio-wrapper">
+                    <img src="images/portfolios/logo/4.jpg" alt="" />
+                    <div class="label">
+                        <div class="label-text">
+                            <a class="text-title">Bookworm</a>
+                            <span class="text-category">Logo</span>
+                        </div>
+                        <div class="label-bg"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio icon" data-cat="icon">
+                <div class="portfolio-wrapper">
+                    <img src="images/portfolios/icon/3.jpg" alt="" />
+                    <div class="label">
+                        <div class="label-text">
+                            <a class="text-title">Sandwich</a>
+                            <span class="text-category">Icon</span>
+                        </div>
+                        <div class="label-bg"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio card" data-cat="card">
+                <div class="portfolio-wrapper">
+                    <img src="images/portfolios/card/3.jpg" alt="" />
+                    <div class="label">
+                        <div class="label-text">
+                            <a class="text-title">Reality</a>
+                            <span class="text-category">Business card</span>
+                        </div>
+                        <div class="label-bg"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio logo" data-cat="logo">
+                <div class="portfolio-wrapper">
+                    <img src="images/portfolios/logo/2.jpg" alt="" />
+                    <div class="label">
+                        <div class="label-text">
+                            <a class="text-title">Speciallisterne</a>
+                            <span class="text-category">Logo</span>
+                        </div>
+                        <div class="label-bg"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="clear"></div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <div class="footer_box footer_left">
+            <dl>
+                <dt><a href="index.html">Wmd Designer</a></dt>
+                <dd class="between"></dd>
+                <dd><b>王萌东</b><span>/</span>WangMengDong</dd>
+                <dd>山东女子学院-2012级数字媒体专业</dd>
+            </dl>
+        </div>
+        <div class="footer_box footer_right">
+            <dl>
+                <dt>Contact me</dt>
+                <dd class="between"></dd>
+                <dd><span>Address:</span>山东省烟台市莱山区华庭路</dd>
+                <dd><span>Email:</span>1010704478@qq.com</dd>
+                <dd><span>Tel:</span>183-5350-7695</dd>
+            </dl>
+        </div>
+        <div class="clear"></div>
+    </div>
+
+
+    <!--显示右侧快速导航栏-->
+    <a id="to_top" class="to_top" title="返回顶部"  href="javascript:void(0)">
+        <i class="iconfont icon-xia"></i>
+    </a>
+</div >
+
+<!-- 自定义 返回顶部按钮 -->
+<script type="text/javascript">
+    $(document).scroll(function(){
+        var top=$(document).scrollTop();
+        if(top<300){
+            $('#to_top').hide();
+        }
+        else{
+            $('#to_top').show();
+        }
+    })
+    $('#to_top').click(function(){
+        $('body,html').animate({scrollTop:0},500);
+    })
+</script>
+
+<!-- 自定义 滚动条样式 -->
+<script src="js/gundongtiao.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $('body').niceScroll({
+        cursorcolor: "#333333",//#CC0071 光标颜色
+        cursoropacitymax: 0.6, //改变不透明度非常光标处于活动状态（scrollabar“可见”状态），范围从1到0
+        touchbehavior: false, //使光标拖动滚动像在台式电脑触摸设备
+        cursorwidth: "6px", //像素光标的宽度
+        cursorborder: "1", // 游标边框css定义
+        cursorborderradius: "6px",//以像素为光标边界半径
+        autohidemode: false //是否隐藏滚动条
+    });
+</script>
+<!-- 自动筛选 样式 -->
+<script type="text/javascript" src="js/shaixuan.easing.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+        var filterList = {
+            init: function () {
+                // MixItUp plugin
+                $('#portfoliolist').mixitup({
+                    targetSelector: '.portfolio',
+                    filterSelector: '.filter',
+                    effects: ['fade'],
+                    easing: 'snap',
+                    // call the hover effect
+                    onMixEnd: filterList.hoverEffect()
+                });
+            },
+            hoverEffect: function () {
+                // Simple parallax effect
+                var label_h=$(".label").height();
+                $('#portfoliolist .portfolio').hover(
+                       /* function () {
+                            $(this).find('.label').stop().animate({top: 0}, 200);
+                            $(this).find('img').stop().animate({top: 0}, 500);
+                        },
+                        function () {
+                            $(this).find('.label').stop().animate({top: -600}, 200);
+                            $(this).find('img').stop().animate({top: 0}, 300);
+                        }*/
+                );
+            }
+        };
+        // Run the show!
+        filterList.init();
+    });
+    //弹出垂直居中
+    $(function(){
+        var label_text_h=$(".label-text").height();
+        $(".label-text").css("margin-top",-label_text_h/2);
+    })
+</script>
+
+<!-- 自定义 -->
+<script type="text/javascript">
+    //页面分辨率改变时 刷新页面
+    window.onresize = function(){
+        location.reload(true);
+    }
+    //header nav导航
+    var win_h=$(window).height();
+    var win_w = $(window).width();
+    $("#black_close").css("height",win_h);
+    $(function(){
+        //获取浏览器宽度
+        if(win_w < 959){
+            $(".header .header_nav").css("height",win_h);
+        }
+    });
+    //header nav导航
+    $(".header_nav .header_nav_first").hover(function(){
+        $(this).addClass("on").siblings().removeClass("on");
+        $(this).children(".header_nav_second").stop(true, false).slideToggle(100);
+    },function(){
+        $(this).removeClass("on");
+        $(this).children(".header_nav_second").stop(true, false).slideToggle(100);
+    });
+    $(".header .header_nav_btn").click(function(){
+        $(".header .header_nav").stop(true, false).animate({width:"220px"},200);
+        $("#black_close").show();
+    });
+    $(".header .header_nav .btn_close_nav").click(function(){
+        $(".header .header_nav").stop(true, false).animate({width:"0px"},200);
+        $("#black_close").hide();
+    });
+    $("#black_close").click(function(){
+        $(".header .header_nav").stop(true, false).animate({width:"0px"},200);
+        $("#black_close").hide();
+    });
+
+
+
+
+</script>
+
+</body>
+</html>
